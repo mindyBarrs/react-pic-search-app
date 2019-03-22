@@ -1,12 +1,15 @@
 /* LIBRARIES */
 import React from "react";
 
+/* COMPONENTS */
+import ImageCard from "../ImageCard/ImageCard";
+
 /* STYLESHEETS */
 import "./ImageList.css";
 
 const ImageList = (props) => {
-    const images = props.images.map(({description, id, urls}) => {
-        return <img key={id} alt={description} src={urls.regular} />
+    const images = props.images.map((images) => {
+        return <ImageCard key={images.id} image={images} />
     });
 
     return(
