@@ -1,8 +1,14 @@
 .ui.segment{
-    background-color:white;
+    background-color:#fff;
     background-image:
-    radial-gradient(midnightblue 9px, transparent 10px),
-    repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+    radial-gradient(#82E1B3 9px, transparent 10px),
+    repeating-radial-gradient(#82E1B3 0, #82E1B3 4px, transparent 5px, transparent 20px, #82E1B3 21px, #82E1B3 25px, transparent 26px, transparent 50px);
     background-size: 30px 30px, 90px 90px;
     background-position: 0 0;
+}
+
+label{
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
 }
