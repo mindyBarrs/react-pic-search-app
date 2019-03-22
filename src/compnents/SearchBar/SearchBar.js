@@ -1,3 +1,4 @@
+/* LIBRARY */
 import React from "react";
 
 /* STYLESHEETS */
@@ -8,16 +9,16 @@ class SearchBar extends React.Component {
         term: ""
     }
 
-    onFormSubmit(event){
+    onFormSubmit = (event) => {
         event.preventDefault();
 
-        console.log(this.state.term);
+        this.props.onSubmit(this.state.term);
     }
 
     render(){
         return(
             <div className="ui segment">
-                <form onSubmit={this.onFormSubmit} className="ui form">
+                <form onSubmit={ this.onFormSubmit } className="ui form">
                     <div className="feild">
                         <label>Image Search</label>
 
